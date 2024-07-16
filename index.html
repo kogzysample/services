@@ -16,7 +16,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #1a3a5b;
+            background-color: #102542; /* Matching background color */
             border-radius: 10px;
         }
         h1, h2, p {
@@ -29,7 +29,7 @@
             margin-top: 40px;
             text-align: center;
         }
-        input[type="text"], input[type="email"], textarea {
+        input[type="email"] {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -58,7 +58,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Our Services</h1>
+        <h1>Services</h1>
+        <div style="margin-bottom: 20px;"></div> <!-- Adding space between "Services" and the listed services -->
 
         <div class="service">
             <h2>Online Presence Development</h2>
@@ -86,13 +87,9 @@
         </div>
 
         <div class="contact-form">
-            <h2>Contact Us</h2>
+            <h2>Get in Touch</h2>
             <form action="https://example.com/submit" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <br>
                 <input type="email" name="email" placeholder="Your Email" required>
-                <br>
-                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
                 <br>
                 <input type="submit" value="Submit">
             </form>
